@@ -1,0 +1,52 @@
+body {
+    background-color: red;
+    color: white;
+}
+
+@font-face {
+    font-family: CenturyGothic;
+    font-weight: bold;
+    src: url(./GOTHICB.woff);
+}
+
+.content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.trolltitle {
+    font-size: 90px;
+    justify-content: center;
+    text-align: center;
+    font-family: CenturyGothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, p {
+    font-family: CenturyGothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+img {
+    width: 90px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a {
+    color: white;
+}
