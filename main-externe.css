@@ -1,0 +1,277 @@
+.main-externe {
+    background-image: url("./login-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative
+}
+
+.main-externe .page-externe {
+    width: 100%
+}
+
+.main-externe.pluricomm {
+    background-image: url("../../images/pp25/login-background-pluricomm.svg")
+}
+
+.main-externe.admin {
+    background-image: url("../../images/pp25/login-background-admin.svg")
+}
+
+.main-externe-plurilogo {
+    text-align: right;
+    margin: 1.5% auto;
+    max-width: 500px;
+    height: 80px;
+    position: relative
+}
+
+.main-externe-plurilogo svg.logo {
+    height: 80px;
+    width: 80px;
+    display: block;
+    fill: #fff;
+    position: relative;
+    left: 26px
+}
+
+.main-externe-plurilogo svg.nom {
+    height: 70px;
+    display: block;
+    fill: #fff;
+    top: -76px;
+    Position: relative;
+    left: 122px
+}
+
+.main-externe-plurilogo svg.nompc {
+    height: 40px;
+    display: block;
+    fill: #fff;
+    top: -58px;
+    Position: relative;
+    left: 122px
+}
+
+.main-externe-plurilogo .texte-admin {
+    Position: relative;
+    top: -86px;
+    font-size: 20px;
+    font-weight: bold;
+    right: 34px;
+    background-color: #fff;
+    color: #1086b0;
+    padding: 2px 10px 2px 10px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px
+}
+
+.main-externe-body {
+    background-color: #fff;
+    border-radius: 16px;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 2%
+}
+
+.main-externe-logo-ecole {
+    text-align: center;
+    padding: 12px 25px;
+    font-size: 26px;
+    border-bottom: 1px solid #a1cedd
+}
+
+.main-externe-logo-ecole img {
+    max-width: calc(100% - 50px);
+    max-height: 100px
+}
+
+.main-externe-copyright {
+    color: #80e3ff;
+    margin: 35px 0 5px
+}
+
+.main-externe-langue {
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 15px
+}
+
+.main-externe-langue a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none
+}
+
+.main-externe-mobile {
+    max-width: 600px;
+    color: #fff;
+    margin: 50px auto 5%;
+    text-align: center
+}
+
+.main-externe-mobile .txt {
+    margin-bottom: 15px;
+    font-size: 14px
+}
+
+.main-externe-mobile svg {
+    width: 155px;
+    height: 45px
+}
+
+svg.main-externe-azure {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto
+}
+
+#LaPageX {
+    max-height: 100%
+}
+
+.main-externe-entete {
+    margin: 7px 0;
+    color: #5ec2cf;
+    font-size: 18px
+}
+
+.main-externe-entete svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+    fill: #5ec2cf
+}
+
+.main-externe-form {
+    padding: 15px 35px;
+    color: #8c8c8c;
+    font-size: 14px
+}
+
+.main-externe-form .erreur {
+    color: red
+}
+
+.main-externe-form input.txt {
+    display: block;
+    margin: 15px 0;
+    padding: 9px;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    border-color: #a1cedd;
+    border-style: solid;
+    box-sizing: border-box
+}
+
+.main-externe-form input.txt:focus-within {
+    border-color: #0375a5
+}
+
+.main-externe-form .img-perso img {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    flex-shrink: 0;
+    flex-grow: 0
+}
+
+.main-externe-form label.label-checkbox {
+    display: block
+}
+
+.main-externe-form label.label-checkbox input {
+    border: 1px solid #5ec2cf;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px
+}
+
+.main-externe-form label.label-checkbox span {
+    vertical-align: super
+}
+
+.main-externe-form .btn {
+    width: 100%;
+    margin: 25px 0;
+    padding: 9px;
+    font-size: 18px;
+    background: linear-gradient(#028fc7, #0375a5);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #7cb1d1;
+    box-sizing: border-box
+}
+
+.main-externe-form .avec-fleche svg {
+    width: 15px;
+    height: 18px;
+    transform: rotate(270deg);
+    vertical-align: middle
+}
+
+.main-externe-form .avec-fleche svg path {
+    fill: #fff
+}
+
+.main-externe-form .noClick {
+    pointer-events: none
+}
+
+.main-externe-form .busy {
+    animation: spin 1s infinite linear;
+    display: inline-block;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #fff
+}
+
+.main-externe-form .busy::before {
+    content: "◠"
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.main-externe-form a {
+    font-size: 14px;
+    color: #2f9bbb;
+    text-decoration: none
+}
+
+.main-externe-form .lien {
+    font-size: 14px;
+    color: #2f9bbb;
+    text-decoration: none
+}
+
+.main-externe-form .retour .avec-fleche svg path {
+    fill: #53a5c2
+}
+
+.main-externe-form .bottom {
+    margin-top: 25px
+}
+
+/*# sourceMappingURL=main-externe.css.map */
